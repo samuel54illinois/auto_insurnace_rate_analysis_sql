@@ -147,7 +147,7 @@ FROM
 
 # 3: Business Logic Filtering for the data. In this stage, we must check whether data is integral according to business logic
 
-# Rotate Through each column to see if there are any weird conditions
+# 3.1 Rotate Through each column to see if there are any weird conditions
 SELECT
   * 
 FROM
@@ -178,7 +178,7 @@ WHERE
 # Since there are only two rows like this that violate business logic, they will be removed from the dataset
 
 
-# Create another table to eliminate those two conditions
+# 3.2 Create another table to eliminate those two conditions
 CREATE OR REPLACE TABLE
   `sql-demo-projects.sql_portofolio.stage5_auto_insurance_claims_data`
 AS SELECT
