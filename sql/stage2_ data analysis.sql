@@ -1,0 +1,1 @@
+SELECT * FROM `sql-demo-projects.sql_portofolio.stage5_auto_insurance_claims_data` LIMIT 1000
